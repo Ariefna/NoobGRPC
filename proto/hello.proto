@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+message SalamRequest {
+    string nama = 1;
+}
+
+message SalamResponse {
+    string pesan = 1;
+}
+
+service SalamService {
+    rpc Sapa(SalamRequest) returns (SalamResponse);
+}
